@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="=X-UA-Compatible" contente="IE=edge">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Ecommerce F&E Website</title>
+    <!--  Link para o Css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+           <a href="#" class="logo">Loja Virtual F&E</a> 
+           <!-- Cart-Icon -->
+           <i class='bx bx-shopping-bag' id="cart-icon"></i>
+           <!-- Carrinho  -->
+           <div class="cart">
+                <h2 class="cart-title">Seu Carrinho <i class='bx bx-cart'></i> </h2>
+                <!-- Conteudo -->
+                <div class="cart-content">
+                                      
+                </div>
+                <!-- Total Para Pagar -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">R$0</div>
+                </div>
+                <div class="digitaremail">
+                    <div class="letra-email">Escolha a Bandeira do Cartão <i class='bx bxs-credit-card-alt'></i></div>
+                    <input type="radio" name="bandeiras" value="visa" class="bandeira-cartao"> Visa<br>
+                    <input type="radio" name="bandeiras" value="mastercard" class="bandeira-cartao"> Mastercard<br>
+                    <input type="radio" name="bandeiras" value="elo" class="bandeira-cartao"> Elo<br>
+                    <input type="radio" name="bandeiras" value="hipercard" class="bandeira-cartao"> Hipercard<br>  
+                </div>
+
+                <div class="dados-cartao">
+                
+                    <form id="form" class="form">
+                        <div class="form-control">
+                          <label for="nomecartao">Nome</label>
+                          <input
+                            type="text"
+                            id="nomecartao"
+                            placeholder="Digite o nome impresso no cartão..."
+                          />
+                          <i class="fas fa-exclamation-circle"></i>
+                          <i class="fas fa-check-circle"></i>
+                          <small>Mensagem de erro</small>
+                        </div>
+                
+                        <div class="form-control">
+                          <label for="numerocartao">Numero Cartão</label>
+                           <input 
+                            type="text" 
+                            id="numerocartao" 
+                            placeholder="Digite o numero do cartão.." />
+                          <i class="fas fa-exclamation-circle"></i>
+                          <i class="fas fa-check-circle"></i>
+                          <small>Mensagem de erro</small>
+                        </div>        
+                
+                        <div class="form-control">
+                            <label for="cvv">cvv</label>
+                             <input 
+                              type="text" 
+                              id="cvv" 
+                              placeholder="Digite o cvv.." />
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensagem de erro</small>
+                          </div>
+                        <!-- Botão Comprar -->
+                        <button type="submit" class="btn-buy">Compre Já</button>                                                                
+                    </form>  
+                </div>
+                <!-- Fechar Carrinho -->
+                <i class='bx bx-x' id="close-cart" ></i>                               
+            </div>
+        </div>
+    </header>
+    <!-- Shop -->
+    <section class="shop container">
+        <div class="section-title">Compre os Produtos</div>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Produto 1 -->
+            <div class="product-box">
+               <img src="img/produto1.jpg" alt="" class="product-img"> 
+               <h2 class="product-title">Iphone 14 Pro 128GB</h2>
+               <span class="price">R$7999.99</span>
+               <i class='bx bx-cart add-cart' ></i>
+            </div>
+            <!-- Produto 2 -->
+            <div class="product-box">
+                <img src="img/produto2.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Iphone 13 64gb</h2>
+                <span class="price">R$5999.99</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 3 -->
+            <div class="product-box">
+                <img src="img/produto3.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Iphone 13 Mini 1TB</h2>
+                <span class="price">R$4999.99</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 4 -->
+            <div class="product-box">
+                <img src="img/produto4.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Iphone SE 64GB</h2>
+                <span class="price">R$2999.99</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 5 -->
+            <div class="product-box">
+                <img src="img/produto5.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Macbook Air M1 256GB</h2>
+                <span class="price">R$5999.99</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 6 -->
+            <div class="product-box">
+                <img src="img/produto6.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Macbook Air M2 256GB</h2>
+                <span class="price">R$6999.99</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 7 -->
+            <div class="product-box">
+                <img src="img/produto7.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Macbook Pro M2 256GB</h2>
+                <span class="price">R$7999.99</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 8 -->
+            <div class="product-box">
+                <img src="img/produto8.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Macbook Pro M2 500GB</h2>
+                <span class="price">R$9999.99</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 9 -->
+            <div class="product-box">
+                <img src="img/produto9.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Airpods 1ªGeração</h2>
+                <span class="price">R$899,90</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 10 -->
+            <div class="product-box">
+                <img src="img/produto10.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Airpods 3ªGeração</h2>
+                <span class="price">R$1099,90</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 11 -->
+            <div class="product-box">
+                <img src="img/produto11.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Airpods 2ªGeração</h2>
+                <span class="price">R$999,90</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+             <!-- Produto 12 -->
+            <div class="product-box">
+                <img src="img/produto12.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">Earpods</h2>
+                <span class="price">R$279,90</span>
+                <i class='bx bx-cart add-cart' ></i>
+             </div>
+        </div>
+    </section>
+    
+    <!-- Link para o JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
